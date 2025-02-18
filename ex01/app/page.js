@@ -1,19 +1,22 @@
 import Image from "next/image"; 
 
+
 function Texto1() {
   return <p>texto 1 otario</p>
 }
 
 export default function Home() {
   const aula = 1;
+  const imgUrl = "https://purina.com.br/sites/default/files/2024-08/queda-de-pelo-em-cachorros-br.jpg";
     return (
       <div>
         <h1>Olá turma!!</h1>
         <p>Nosso primeira {aula}ª aula de react</p>
+
+        <img src= {imgUrl}></img>
       <Texto1 />
       </div>
 
-     
     )
   
   }
