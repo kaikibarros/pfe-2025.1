@@ -1,30 +1,43 @@
-import Image from "next/image"; 
-
+"use client"; // é preciso usar para interagir o useState com o react, já que isso é Next
+import { use, useState } from "react";
 
 function Texto1() {
-  return <p>texto 1 otario</p>
+  const imgUrl =
+    "https://purina.com.br/sites/default/files/2024-08/queda-de-pelo-em-cachorros-br.jpg";
+  return (
+    <div>
+      <p>IMAGEM DE cachorros</p>
+      <img src={imgUrl}></img>
+    </div>
+  );
 }
 
 export default function Home() {
+  const [hide, setHide] = useState(false);
+  const [numAleat, setNumAl] = useState();
   const aula = 1;
-  const imgUrl = "https://purina.com.br/sites/default/files/2024-08/queda-de-pelo-em-cachorros-br.jpg";
-    return (
-      <div>
-        <h1>Olá turma!!</h1>
-        <p>Nosso primeira {aula}ª aula de react</p>
+  return (
+    <div>
+      <h1>Olá turma!!</h1>
+      <p>Nosso primeira {aula}ª aula de react</p>
+      <hr />
+      <button onClick={() => setHide(!hide)}>{hide ? "Show" : "Hide"}</button>
+      <br></br>
 
-        <img src= {imgUrl}></img>
-      <Texto1 />
-      </div>
+      <button onClick={() => setNumAl(Math.floor(Math.random() * 100))}>
+        {" "}
+        ALEATÓRIO: {numAleat}
+      </button>
 
-    )
-  
-  }
-
-
-
-
-
+      <hr />
+      {!hide && (
+        <>
+          <Texto1 />
+        </>
+      )}
+    </div>
+  );
+}
 
 //     <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
 //       <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
