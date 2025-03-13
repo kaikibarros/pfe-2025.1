@@ -1,0 +1,1 @@
+ criar um aplicativo React com um componente Dado, que recebe uma prop valor e exibe uma imagem correspondente ao número do dado (de 1 a 6). Além disso, deve ter um botão que, ao ser clicado, gera um número aleatório entre 1 e 6, alterando o estado do dado.
