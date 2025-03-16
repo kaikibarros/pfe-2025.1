@@ -24,19 +24,19 @@
 
 // export default App;
 
-
-import React, { useState } from 'react';
-import './App.css';
+import React, { useState } from "react";
+import "./App.css";
 
 const Dado = ({ valor }) => {
   // Mapeia as imagens dos dados
   const imagensDado = [
-    '/dados1.png',
-    '/dados2.png',
-    '/dados3.png',
-    '/dados4.png',
-    '/dados5.png',
-    '/dados6.png',
+    "/dados1.png",
+    "/dados2.png",
+    "/dados3.png",
+    "/dados4.png",
+    "/dados5.png",
+    "/dados6.png",
+    
   ];
 
   return (

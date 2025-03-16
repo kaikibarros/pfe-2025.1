@@ -5,6 +5,7 @@ function Texto1() {
   const imgUrl =
     "https://purina.com.br/sites/default/files/2024-08/queda-de-pelo-em-cachorros-br.jpg";
   return (
+
     <div>
       <p>IMAGEM DE cachorros</p>
       <img src={imgUrl}></img>
@@ -18,6 +19,9 @@ export default function Home() {
   const aula = 1;
   return (
     <div>
+    
+
+  
       <h1>Olá turma!!</h1>
       <p>Nosso primeira {aula}ª aula de react</p>
       <hr />
