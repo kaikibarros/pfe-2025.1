@@ -84,11 +84,10 @@ const Page = () => {
 
   return (
     <div className="App">
-      <h1>Jogo do Dado</h1>
-      <h2>Placar:</h2>
+      <h1>Placar:</h1>
       <p>{pontosJogador1} x {pontosJogador2}</p>
 
-      <div>
+      <div className="dados">
         <h3>Jogador 1</h3>
         <img src={imagensDado[dado1]} alt={`Dado ${dado1 + 1}`} />
         <button
@@ -99,7 +98,7 @@ const Page = () => {
         </button>
       </div>
 
-      <div>
+      <div className="dados">
         <h3>Jogador 2</h3>
         <img src={imagensDado[dado2]} alt={`Dado ${dado2 + 1}`} />
         <button

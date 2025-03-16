@@ -10,9 +10,6 @@ export default function Layout({ children }) {
         <h1>Bem-vindo ao Jogo do Dado</h1>
       </header>
       <main>{children}</main>
-      <footer>
-        <p>© 2025 - Kaiki Barros - Direitos Reservados</p>
-      </footer>
     </div>
 
     </body>
