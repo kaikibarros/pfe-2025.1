@@ -9,7 +9,7 @@
 
 header {
 
-  background-color: #0070f3;
+  background-color:green;
   color: white;
   width: 100%;
   text-align: center;
@@ -45,7 +45,7 @@ button {
   font-size: 16px;
   cursor: pointer;
   border: none;
-  background-color: #0070f3;
+  background-color:green;
   color: white;
   border-radius: 5px;
 }
@@ -58,3 +58,19 @@ button {
   align-items: center; 
   
 } 
+
+.placar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; 
+  align-items: center; 
+  align-content: space-between;
+  font-size: 2em;  
+}
+
+.vencedor {
+  display:flex;
+  font-size: 2em;
+  justify-content: center;
+
+}

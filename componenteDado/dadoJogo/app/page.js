@@ -82,10 +82,16 @@ const Page = () => {
     setJogoAtivo(true);
   };
 
+
+
+
+  
   return (
     <div className="App">
+      <section className="placar">   
       <h1>Placar:</h1>
       <p>{pontosJogador1} x {pontosJogador2}</p>
+      </section>
 
       <div className="dados">
         <h3>Jogador 1</h3>
@@ -109,20 +115,20 @@ const Page = () => {
         </button>
       </div>
 
-      <p>Rodadas Restantes: {rodadasRestantes}</p>
+      <p className="vencedor">Rodadas Restantes: {rodadasRestantes}</p>
 
       {rodadasRestantes === 0 && jogoAtivo && (
         <div>
-          <h2>Resultado: {vencedor}</h2>
+          <h2 className="vencedor">Resultado: {vencedor}</h2>
           <button onClick={finalizarJogo}>Finalizar Jogo</button>
         </div>
       )}
 
       {!jogoAtivo && (
         <div>
-          <h2>Fim do Jogo</h2>
-          <p>{vencedor}</p>
-          <button onClick={reiniciarJogo}>Jogar Novamente</button>
+          <h2 className="vencedor">Fim do Jogo</h2>
+          <p className="vencedor">{vencedor}</p>
+          <button className="vencedor" onClick={reiniciarJogo}>Jogar Novamente</button>
         </div>
       )}
     </div>

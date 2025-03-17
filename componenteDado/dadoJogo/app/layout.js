@@ -7,7 +7,7 @@ export default function Layout({ children }) {
     <body> 
       <div className="layout">
       <header>
-        <h1>Bem-vindo ao Jogo do Dado</h1>
+        <h1>Jogo do Dado</h1>
       </header>
       <main>{children}</main>
     </div>
