@@ -16,23 +16,24 @@ const Dado = () => {
 };
 
 const Page = () => {
-  const imagensDado = Dado(); // Obtenha as imagens aqui
+  //  armazenar informações
+  const imagensDado = Dado(); 
   const [pontosJogador1, setPontosJogador1] = useState(0);
   const [pontosJogador2, setPontosJogador2] = useState(0);
-  const [rodadasRestantes, setRodadasRestantes] = useState(5); // Rodadas restantes
-  const [dado1, setDado1] = useState(0); // Estado para o dado 1
-  const [dado2, setDado2] = useState(0); // Estado para o dado 2
-  const [vencedor, setVencedor] = useState(""); // Armazena o vencedor
-  const [jogoAtivo, setJogoAtivo] = useState(true); // Controla se o jogo está ativo
-  const [dado1Rolado, setDado1Rolado] = useState(false); // Controla se o dado 1 foi rolado
-  const [dado2Rolado, setDado2Rolado] = useState(false); // Controla se o dado 2 foi rolado
+  const [rodadasRestantes, setRodadasRestantes] = useState(5);
+  const [dado1, setDado1] = useState(0); 
+  const [dado2, setDado2] = useState(0);
+  const [vencedor, setVencedor] = useState("");
+  const [jogoAtivo, setJogoAtivo] = useState(true); 
+  const [dado1Rolado, setDado1Rolado] = useState(false);
+  const [dado2Rolado, setDado2Rolado] = useState(false); 
 
   // Função para rolar o Dado 1
   const rolarDado1 = () => {
     if (rodadasRestantes > 0 && !dado1Rolado) {
-      const resultadoDado1 = Math.floor(Math.random() * 6); // Valor do dado 1
+      const resultadoDado1 = Math.floor(Math.random() * 6); 
       setDado1(resultadoDado1);
-      setDado1Rolado(true); // Marca que o dado 1 foi rolado
+      setDado1Rolado(true); 
     }
   };
 
@@ -41,7 +42,7 @@ const Page = () => {
     if (rodadasRestantes > 0 && dado1Rolado && !dado2Rolado) {
       const resultadoDado2 = Math.floor(Math.random() * 6); // Valor do dado 2
       setDado2(resultadoDado2);
-      setDado2Rolado(true); // Marca que o dado 2 foi rolado
+      setDado2Rolado(true); 
 
       // Verifica quem venceu a rodada e soma 1 ponto
       if (dado1 > resultadoDado2) {
@@ -69,7 +70,7 @@ const Page = () => {
       setVencedor("Empate!");
     }
   };
-
+  // volta as configurações padrões
   const reiniciarJogo = () => {
     setPontosJogador1(0);
     setPontosJogador2(0);
