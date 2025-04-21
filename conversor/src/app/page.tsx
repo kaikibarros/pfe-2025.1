@@ -12,9 +12,9 @@ export default function Home() {
     <nav className="space-y-2">
       <Link href="/sobre" className="text-blue-600 underline block">Sobre o Desenvolvedor</Link>
       <Link href="/conversor-dolar" className="text-blue-600 underline block">Conversor Dólar ↔ Real</Link>
-      <Link href="/conversor-temperatura" className="text-blue-600 underline block">Conversor Temperatura (°C ↔ °F)</Link>
+      <Link href="/conversor-temp" className="text-blue-600 underline block">Conversor Temperatura (°C ↔ °F)</Link>
       <Link href="/conversor-medidas" className="text-blue-600 underline block">Conversor Metros ↔ Pés / Polegadas</Link>
     </nav>
   </main>
   );
-}                                                                                                                                                                                                                                                
+}                                                                                                                                                                                                                                    
