@@ -73,4 +73,35 @@ export default function ConversorMedidas() {
 }
 
 
-// refazer par aum jeito mais eu 
+// segunda opção
+
+// 'use client'
+// import { useState } from 'react'
+
+// export default function ConversorMedidas() {
+//   const [metros, setMetros] = useState('')
+
+//   // Conversões diretas
+//   const metrosFloat = parseFloat(metros)
+//   const pes = isNaN(metrosFloat) ? '' : (metrosFloat * 3.28084).toFixed(2)
+//   const polegadas = isNaN(metrosFloat) ? '' : (metrosFloat * 39.3701).toFixed(2)
+
+//   return (
+//     <main className="p-8 max-w-md mx-auto">
+//       <h1 className="text-2xl font-bold mb-4">Conversor de Medidas</h1>
+
+//       <label className="block mb-2">
+//         Metros:
+//         <input
+//           type="number"
+//           value={metros}
+//           onChange={e => setMetros(e.target.value)}
+//           className="mt-1 w-full p-2 border rounded"
+//         />
+//       </label>
+
+//       <p className="mt-4">Pés: {pes}</p>
+//       <p>Polegadas: {polegadas}</p>
+//     </main>
+//   )
+// }

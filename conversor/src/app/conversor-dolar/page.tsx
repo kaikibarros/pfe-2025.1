@@ -2,7 +2,7 @@
 import { useState, useEffect } from 'react'
 
 export default function ConversorDolar() {
-  const cotacao = 5.81
+  const cotacao = 5.84
   const [dolar, setDolar] = useState('')
   const [real, setReal] = useState('')
 
@@ -23,7 +23,7 @@ export default function ConversorDolar() {
   return (
     <main className="p-8 max-w-md mx-auto">
       <h1 className="text-2xl font-bold mb-4">Conversor Dólar --- Real</h1>
-      <p className="mb-4 text-sm text-gray-600">Cotação fixa: 1 USD = R$ 5,15 (14/04/2025)</p>
+      <p className="mb-4 text-sm text-gray-600">Cotação fixa: 1 USD = R$ 5,84 (14/04/2025)</p>
 
       <label className="block mb-2">
         Dólares (USD):
