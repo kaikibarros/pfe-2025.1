@@ -1,5 +1,6 @@
 'use client'
 import { useState, useEffect } from 'react'
+import Link from 'next/link'
 
 export default function ConversorDolar() {
   const cotacao = 5.84
@@ -46,6 +47,9 @@ export default function ConversorDolar() {
           className="mt-1 w-full p-2 border rounded"
         />
       </label>
+
+       <Link href="/" className="text-gray-200 underline block p-5">Voltar para a páginal inicial</Link>
+
     </main>
   )
 }

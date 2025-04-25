@@ -1,5 +1,6 @@
 'use client'
 import { useState, useEffect } from 'react'
+import Link from 'next/link'
 
 export default function ConversorMedidas() {
   const [metros, setMetros] = useState('')
@@ -68,12 +69,15 @@ export default function ConversorMedidas() {
           className="mt-1 w-full p-2 border rounded"
         />
       </label>
+      
+      <Link href="/" className="text-gray-200 underline block p-5">Voltar para a páginal inicial</Link>
+
     </main>
   )
 }
 
 
-// segunda opção
+// Código antigo:
 
 // 'use client'
 // import { useState } from 'react'
